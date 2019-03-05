@@ -11,7 +11,7 @@
 .App-header {
   //background-color: #282c34;
   /*background: url(https://ak6.picdn.net/shutterstock/videos/6898396/thumb/1.jpg);*/
-  background: url(https://media.giphy.com/media/3o6vXTpomeZEyxufGU/giphy.gif) ;
+  /*background: url(https://media.giphy.com/media/3o6vXTpomeZEyxufGU/giphy.gif) ;*/
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -33,4 +33,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main{
+  margin-top: 56px;
 }

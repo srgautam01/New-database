@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBarComponent from './components/nav-bar'
+import NavBarComponent from './components/nav-bar/nav-bar'
+import HomeComponent from './components/home/home'
+import ToolComponent from './components/tools/tools'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
     constructor(props){
@@ -29,23 +32,22 @@ class App extends Component {
   render() {
         const loginSuccess = this.state.loginSuccess;
         const username = this.state.name;
+
     return (
       <div className="App">
-        <NavBarComponent />
+
+        <Router>
+            <div>
+                <NavBarComponent />
+
+                <main className={"main"}>
+                    <Route exact path="/" component={HomeComponent} />
+                    <Route path="/tools" component={ToolComponent} />
+                </main>
+            </div>
+        </Router>
         <header className="App-header">
-          <img src="https://www2.southeastern.edu/Academics/Faculty/galkadi/imagesNew/galkadiPhoto.jpg" className="App-logo" alt="logo" />
 
-            My Name Is Ghassan Alkadi.<h1>G DOC</h1>
-              <form onSubmit={this.handleLogin}>
-                  <input type="text" name="username" placeholder="Enter username..."/><br />
-                  <input type="password" name="password" placeholder="Enter password..." /><br />
-
-                  <input type="submit" value="Login" />
-              </form>
-
-            {loginSuccess  && (
-                <p> Congrats, {username}, you are a Ghassan fan now!</p>
-            )}
         </header>
       </div>
     );
