@@ -1,3 +1,12 @@
-.Home{
-    color:blue;
+.Main{
+    display: inline-flex;
+    color: blue;
+}
+.home{
+    line-height: 7.5rem;
+
+}
+.image1size, .image2size, .image3size{
+    height: 500px;
+
 }
