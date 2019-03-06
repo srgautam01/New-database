@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './nav-bar.css';
 import {Link} from 'react-router-dom';
+import Login from '../login/login'
 
 class NavBarComponent extends Component {
     constructor(props) {
@@ -38,6 +39,7 @@ class NavBarComponent extends Component {
                         <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
+                    <Login />
                 </div>
             </nav>
         )
