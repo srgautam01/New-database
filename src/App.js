@@ -4,6 +4,7 @@ import './App.css';
 import NavBarComponent from './components/nav-bar/nav-bar'
 import HomeComponent from './components/home/home'
 import ToolComponent from './components/tools/tools'
+import About from './components/about/about'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
@@ -43,6 +44,7 @@ class App extends Component {
                 <main className={"main"}>
                     <Route exact path="/" component={HomeComponent} />
                     <Route path="/tools" component={ToolComponent} />
+                    <Route path="/about" component={About} />
                 </main>
             </div>
         </Router>
