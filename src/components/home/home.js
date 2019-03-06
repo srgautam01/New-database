@@ -52,7 +52,7 @@ class HomeComponent extends Component{
 
 
 
-       
+
         )
     }
 }
