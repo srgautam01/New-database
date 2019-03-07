@@ -4,7 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap';
+
+if(typeof window !== 'undefined'){
+    window.jQuery = require('jquery');
+    window.$ = window.jQuery;
+
+    window.Popper = require('popper.js');
+}
+require('bootstrap');
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
