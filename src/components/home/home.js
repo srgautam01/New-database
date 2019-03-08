@@ -33,16 +33,22 @@ class HomeComponent extends Component{
                 <div className="container onetype">
                     <div className="row">
                         <div className="col-sm">
-                            I can find places for you
+                            I can find vacation places for you
                             <Link to={'/tools'}>
-                                take me to tools
+                                <button type="button" className="btn btn-primary btn-lg">vacation button</button>
                             </Link>
                         </div>
                         <div className="col-sm">
-                            I am home page
+                            I can search marts and grossary stores for you.
+                            <Link to={'/tools'}>
+                                <button type="button" className="btn btn-primary btn-lg">grossary button</button>
+                            </Link>
                         </div>
                         <div className="col-sm">
                             I can find food places for you
+                            <Link to={'/tools'}>
+                                <button type="button" className="btn btn-primary btn-lg">food button</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
