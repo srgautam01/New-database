@@ -9,13 +9,13 @@ class HomeComponent extends Component{
                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="d-block w-100 image1size" src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="First slide" />
+                            <img className="d-block w-100 image1size" src="https://images.oyster.com/photos/main-pool--v14743931-w902.jpg" alt="First slide" />
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100 image2size" src="https://i.pinimg.com/originals/6f/28/a3/6f28a39660077bf2053481a7e5aed6c4.jpg" alt="Second slide" />
+                            <img className="d-block w-100 image2size" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/90/08/cc/la-paella.jpg" alt="Second slide" />
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100 image3size" src="http://www.technocrazed.com/wp-content/uploads/2015/12/Tree-wallpaper-to-use-as-background-135.jpg" alt="Third slide" />
+                            <img className="d-block w-100 image3size" src="https://www.rd.com/wp-content/uploads/2019/01/pasadena-ca-usa-november-15-2014-whole-food-market-exterior-whole-foods-is-an-american-foods-supermarket-chain-specializing-in-natural-and-organic-foods-760x506.jpg" alt="Third slide" />
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -33,19 +33,19 @@ class HomeComponent extends Component{
                 <div className="container onetype">
                     <div className="row">
                         <div className="col-sm">
-                            I can find vacation places for you
+                            I can find vacation places for you <br />
                             <Link to={'/tools'}>
                                 <button type="button" className="btn btn-primary btn-lg">vacation button</button>
                             </Link>
                         </div>
                         <div className="col-sm">
-                            I can search marts and grossary stores for you.
+                            I can search marts and grossary stores for you.<br />
                             <Link to={'/tools'}>
-                                <button type="button" className="btn btn-primary btn-lg">grossary button</button>
+                                <button type="button" className="btn btn-primary btn-lg">grocery button</button>
                             </Link>
                         </div>
                         <div className="col-sm">
-                            I can find food places for you
+                            I can find food places for you<br />
                             <Link to={'/tools'}>
                                 <button type="button" className="btn btn-primary btn-lg">food button</button>
                             </Link>
