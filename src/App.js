@@ -6,6 +6,7 @@ import HomeComponent from './components/home/home'
 import ToolComponent from './components/tools/tools'
 import FooterComponent from './components/footer/footer'
 import About from './components/about/about'
+import CategoryComponent from './components/category/category'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends Component {
@@ -46,6 +47,7 @@ class App extends Component {
                     <Route exact path="/" component={HomeComponent} />
                     <Route path="/tools" component={ToolComponent} />
                     <Route path="/about" component={About} />
+                    <Route path="/category/:categoryName" component={CategoryComponent} />
                 </main>
             </div>
         </Router>

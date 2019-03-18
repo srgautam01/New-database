@@ -34,19 +34,19 @@ class HomeComponent extends Component{
                     <div className="row">
                         <div className="col-sm">
                             I can find vacation places for you <br />
-                            <Link to={'/tools'}>
+                            <Link to={'/category/vacation'}>
                                 <button type="button" className="btn btn-primary btn-lg">vacation button</button>
                             </Link>
                         </div>
                         <div className="col-sm">
                             I can search marts and grossary stores for you.<br />
-                            <Link to={'/tools'}>
+                            <Link to={'/category/grocery'}>
                                 <button type="button" className="btn btn-primary btn-lg">grocery button</button>
                             </Link>
                         </div>
                         <div className="col-sm">
                             I can find food places for you<br />
-                            <Link to={'/tools'}>
+                            <Link to={'/category/food'}>
                                 <button type="button" className="btn btn-primary btn-lg">food button</button>
                             </Link>
                         </div>
