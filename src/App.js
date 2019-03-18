@@ -4,6 +4,7 @@ import './App.css';
 import NavBarComponent from './components/nav-bar/nav-bar'
 import HomeComponent from './components/home/home'
 import ToolComponent from './components/tools/tools'
+import FooterComponent from './components/footer/footer'
 import About from './components/about/about'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -48,9 +49,9 @@ class App extends Component {
                 </main>
             </div>
         </Router>
-        <header className="App-header">
+          <FooterComponent />
 
-        </header>
+
       </div>
     );
   }
