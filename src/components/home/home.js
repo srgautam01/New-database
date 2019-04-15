@@ -39,7 +39,7 @@ class HomeComponent extends Component{
                             </Link>
                         </div>
                         <div className="col-sm">
-                            I can search marts and grossary stores for you.<br />
+                            I can search marts and grocery stores for you.<br />
                             <Link to={'/category/grocery'}>
                                 <button type="button" className="btn btn-primary btn-lg">grocery button</button>
                             </Link>
