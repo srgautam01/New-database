@@ -155,6 +155,18 @@ app.delete('/animals/:id', (req, res, next) => {
   }
 });
 
+app.post('/login', (req, res, next) => {
+  const username = req.body.username;
+  const password = req.body.password;
+
+  if (username === 'sundar' && password === 'abcdefgh') {
+    res.send({success: true});
+  }else {
+    res.status(401).send({success: false});
+  }
+
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
 });
