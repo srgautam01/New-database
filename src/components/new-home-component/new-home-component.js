@@ -46,9 +46,7 @@ export default class NewHomeComponent extends Component {
                 Place loaded: {place.name}
                 Capital City: {place.capital}
                 Place Location: {place.location}
-                Capital City: {place.capital}
-                Capital City: {place.capital}
-                Capital City: {place.capital}
+
 
             </div>:<div>
                 <form onSubmit={this.handleSearch}>
@@ -68,15 +66,15 @@ export default class NewHomeComponent extends Component {
              <h3>Take a tour to colorado.. </h3>
              <h4>Travel Destination Colorado</h4>
              <h5>Famous Hotel and restaurants in colorado</h5>
-             <h6>Hiking in Colorado</h6>
+             <h6>Hiking and Rafting in Colorado</h6>
 
 
             <div class="cities">
-            <h2>Colorado</h2>
-        <p>The Capital City Of Colorado is Denver.</p>
-        <p>Its famous tourism destination is colorado springs,.....</p>
-    <p>The Capital City Of Colorado is Denver.</p>
-    <p>The Capital City Of Colorado is Denver.</p>
+            <h2>IMPORTANT INFORMATION OF THE PLACES</h2>
+        <p>FAMOUS TOURISM DESTINATION.</p>
+        <p> HIKING AND RAFTING </p>
+    <p>RESTAURANTS AND BARS</p>
+    <p>SHARE AND LIKE US ON FACEBOOK</p>
 
     </div>
         </div>

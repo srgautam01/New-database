@@ -4,7 +4,7 @@ import './search-results.css'
 export default class SearchResults extends React.Component{
     render(){
         return <div>
-           Search Results
+           WELCOME TO EXPLORERS PACK.
         </div>
     }
 }
