@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import NavBarComponent from './components/nav-bar/nav-bar'
 import HomeComponent from './components/home/home'
@@ -8,6 +7,7 @@ import FooterComponent from './components/footer/footer'
 import About from './components/about/about'
 import CategoryComponent from './components/category/category'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import NewHome from './components/new-home-component/new-home-component'
 
 class App extends Component {
     constructor(props){
@@ -47,6 +47,7 @@ class App extends Component {
                     <Route exact path="/" component={HomeComponent} />
                     <Route path="/tools" component={ToolComponent} />
                     <Route path="/about" component={About} />
+                    <Route path="/new" component={NewHome} />
                     <Route path="/category/:categoryName" component={CategoryComponent} />
                 </main>
             </div>

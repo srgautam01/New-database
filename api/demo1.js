@@ -155,6 +155,43 @@ app.delete('/animals/:id', (req, res, next) => {
   }
 });
 
+app.post('/login', (req, res, next) => {
+  const username = req.body.username;
+  const password = req.body.password;
+
+  if (username === 'sundar' && password === 'abcdefgh') {
+    res.send({success: true});
+  }else {
+    res.status(401).send({success: false});
+  }
+
+});
+
+app.get('/search/:place', async (req, res) => {
+  const { place } = req.params;
+
+
+  // const placeTest = new models.Place({
+  //   name: 'test'
+  // })
+  // await placeTest.save();
+
+  const result = await models.Place.find({
+    name: new RegExp("^"+ place.toLowerCase())
+  });
+
+  // console.log(result, placeTest);
+
+  if (result.length == 0)res.status(404).send({success: false});
+else{
+    res.send({
+      ...result[0]._doc
+    })
+
+  }
+
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
 });
