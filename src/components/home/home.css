@@ -1,16 +1,28 @@
-.Main{
-    display: inline-flex;
-    color: blue;
+.container {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100vw;
+  background-color: #343a40;
 }
-.home{
-    line-height: 7.5rem;
-
+.result {
+  color: black;
+  background-color: lightblue;
+  height: 100vh;
 }
-.image1size, .image2size, .image3size
-img {
-    width: 100%;
-    height: auto;
+.map {
+  color: black;
+  background-color: lightgreen;
+  height: 100vh;
 }
+.pic {
+  height: 20%;
+  width: 20%;
+}
+.jumbo {
+  background-image: url("nepal.jpg");
+  background-size: cover;
+  background-position-y: 30%;
 
-
-
+  color: white;
+}

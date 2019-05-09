@@ -1,55 +1,55 @@
-import React, { Component } from 'react';
-import './nav-bar.css';
-import {Link} from 'react-router-dom';
-import Login from '../login/login'
-
+import React, { Component } from "react";
+import "./nav-bar.css";
+import { Link } from "react-router-dom";
+import Login from "../login/login";
 
 class NavBarComponent extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
+  }
 
-    }
+  render() {
+    return (
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <Link className="navbar-brand" to="/" />
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
 
-    render() {
-        return(
+        <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+            </li>
 
-            <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <Link className="navbar-brand" to="/"></Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon" />
-                </button>
+            <li className="nav-item">
+              <Link to="/new" className="nav-link">
+                Attractions
+              </Link>
+            </li>
 
-                <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/tools" className="nav-link">Tools</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/about" className="nav-link">About us</Link>
-                        </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">
+                About us
+              </Link>
+            </li>
+          </ul>
 
-                        <li className="nav-item">
-                            <Link to="/new" className="nav-link">New page</Link>
-                        </li>
-
-
-                    </ul>
-
-                    <Login />
-                    <form className="form-inline my-2 my-lg-0">
-                        <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-
-                </div>
-            </nav>
-        )
-    }
+          <Login />
+        </div>
+      </nav>
+    );
+  }
 }
 
 export default NavBarComponent;
