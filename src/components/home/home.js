@@ -8,15 +8,7 @@ class HomeComponent extends Component {
 
     this.state = {
       transportTypes: [
-        {
-          type: 'airport'
-        },
-        {
-          type: 'train'
-        },
-        {
-          type: 'boat'
-        }
+
       ]
     }
   }

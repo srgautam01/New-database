@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+
+ .cities {
+     background-color: black;
+     color: white;
+     margin: 20px;
+     padding: 20px;
+ }

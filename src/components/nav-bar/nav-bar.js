@@ -3,6 +3,7 @@ import './nav-bar.css';
 import {Link} from 'react-router-dom';
 import Login from '../login/login'
 
+
 class NavBarComponent extends Component {
     constructor(props) {
         super(props);
@@ -31,6 +32,11 @@ class NavBarComponent extends Component {
                         <li className="nav-item">
                             <Link to="/about" className="nav-link">About us</Link>
                         </li>
+
+                        <li className="nav-item">
+                            <Link to="/new" className="nav-link">New page</Link>
+                        </li>
+
 
                     </ul>
 
