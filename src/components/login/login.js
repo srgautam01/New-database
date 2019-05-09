@@ -36,24 +36,24 @@ class Login extends Component{
         }).then(res => res.json())
             .then(res => {
                 if (res.success) {
-                    this.props.history.push("/tools");
+                    this.props.history.push("/new");
                 }else {
                     alert("Wrong username/password")
                 }
                 console.log('success', res);
             })
 
-        //
-        // fetch('http://localhost:4002/expressions')
-            // .then(res => res.json())
-            // .then(res => {
-            //     console.log('Got all expressions', res)
-            // })
-            // .catch(err => {
-            //     console.error('error: ', err);
-            // })
 
-        // alert('you clickd login!')
+        fetch('http://localhost:4002/expressions')
+             .then(res => res.json())
+             .then(res => {
+                 console.log('Got all expressions', res)
+             })
+             .catch(err => {
+                 console.error('error: ', err);
+             })
+
+         alert('you clickd login!')
     }
 
     handleChange(key, e) {
